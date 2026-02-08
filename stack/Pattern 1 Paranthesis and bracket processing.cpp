@@ -1,6 +1,7 @@
 Subtype 1. Basic validation
 
 20. Valid Parentheses
+https://leetcode.com/problems/valid-parentheses/description/
 
 class Solution {
 public:
@@ -35,3 +36,7 @@ public:
         return st.empty();
     }
 };
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
