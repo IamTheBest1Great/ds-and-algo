@@ -38,5 +38,35 @@ public:
 };
 
 -------------------------------------------------------------------------------------------------------------------------
+921. Minimum Add to Make Parentheses Valid
 
+ https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/description/
+
+https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/solutions/7910301/stack-parantesis-problem-by-shubham_sk70-xq1u/
+
+class Solution {
+public:
+    int minAddToMakeValid(string s) 
+    {
+        stack<char> stk;
+        for(auto x:s)
+        {
+            if(x=='(')
+            {
+                stk.push('(');
+            }
+            else if(stk.size()>0 && x==')' && stk.top()=='(')
+            {
+                stk.pop();
+            }
+            else
+            {
+                stk.push(x);
+            }
+        }
+        return stk.size();
+        
+    }
+};
+-----------------------------------------------------------------------------------------------------------------
 
