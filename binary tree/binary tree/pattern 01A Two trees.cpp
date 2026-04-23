@@ -2,9 +2,6 @@
 https://leetcode.com/problems/leaf-similar-trees/
 
 Consider all the leaves of a binary tree, from left to right order, the values of those leaves form a leaf value sequence.
-
-
-
 For example, in the given tree above, the leaf value sequence is (6, 7, 4, 9, 8).
 
 Two binary trees are considered leaf-similar if their leaf value sequence is the same.
@@ -50,7 +47,15 @@ public:
 ----------------------------------------------------------
 Isomorphic Trees
 https://www.geeksforgeeks.org/problems/check-if-tree-is-isomorphic/1
-  
+
+    Given two Binary Trees. Check whether they are Isomorphic or not.
+
+Note: 
+Two trees are called isomorphic if one can be obtained from another by a series of flips,
+    i.e. by swapping left and right children of several nodes. 
+    Any number of nodes at any level can have their children swapped. Two empty trees are isomorphic.
+
+    
 class Solution {
   public:
     // Return True if the given trees are isomotphic. Else return False.
