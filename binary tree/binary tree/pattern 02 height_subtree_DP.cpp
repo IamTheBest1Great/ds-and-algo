@@ -1,6 +1,13 @@
 Remove Half Nodes
 https://www.geeksforgeeks.org/problems/remove-half-nodes/1
 
+
+You are given a binary tree and you need to remove all the half nodes 
+(which have only one child). Return the root node of the modified tree after removing all the half-nodes.
+
+Note: The output will be judged by the inorder traversal of the resultant tree, inside the driver code.
+
+  
 class Solution {
   public:
     Node *RemoveHalfNodes(Node *root) {
