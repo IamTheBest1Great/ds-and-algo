@@ -167,3 +167,37 @@ public:
 };
 -------------------------------------------------------------------
 
+Longest Univalue Path
+https://leetcode.com/problems/longest-univalue-path/description/
+  
+class Solution {
+public:
+    int helper(TreeNode *root, int &maxlen)
+    {
+        if(root==NULL)
+        {
+            return 0;
+        }
+        
+        int left= helper(root->left, maxlen);
+        
+        int right= helper(root->right, maxlen);
+        
+        if(!root->left || root->left->val!=root->val)
+        {
+            left=0;
+        }
+        if(!root->right || root->right->val!=root->val)
+        {
+            right=0;
+        }
+        maxlen= max(maxlen,left+right);
+        return max(left,right)+1;
+    }
+    int longestUnivaluePath(TreeNode* root)
+    {
+        int maxlen=0;
+        helper(root,maxlen);
+        return maxlen;
+    }
+};
