@@ -16,7 +16,9 @@ Got it — you want a **clean index/template**, where each problem has only a **
 
 ### 2. LeetCode 678 — Valid Parenthesis String
 
-📎 **Notes:** `[Attach file / notes here]`
+<img width="1149" height="1369" alt="image" src="https://github.com/user-attachments/assets/4c94544f-5ad7-420b-abc5-e938a74629be" />
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/9e1c41b4-591b-4382-b92f-555b36e866e8" />
+
 
 ### 3. LeetCode 856 — Score of Parentheses
 
